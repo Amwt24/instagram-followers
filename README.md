@@ -1,5 +1,3 @@
-==================== README.md ====================
-File: README.md
 Instagram Follower Stats Scraper
 
 🔍 Script to extract follower statistics from Instagram accounts using Selenium.
