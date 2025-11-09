@@ -64,6 +64,7 @@ cp .env.example .env
 Edit .env:
 
 IG_USERNAME=your_username
+
 IG_PASSWORD=your_password
 
 💻 Usage
@@ -72,10 +73,13 @@ Basic configuration
 Edit the variables in the main script:
 
 count = 50  # Number of followers to analyze
+
 account = "target_account"  # Target account
+
 page = "followers"  # "followers" or "following"
 
 Run the script
+
 python instagram_follower_stats.py
 
 📊 Results
@@ -83,19 +87,29 @@ python instagram_follower_stats.py
 The script generates 3 types of files:
 
 1. CSV (account_followers_stats_TIMESTAMP.csv)
+   
 Username,Username_Follower,Num_Followers
+
 target_account,follower1,1234
+
 target_account,follower2,5678
 
 2. Formatted TXT (account_followers_stats_TIMESTAMP.txt)
-================================================================================
-FOLLOWER ANALYSIS - target_account
-Date: 2024-11-08 15:30:00
-================================================================================
 
-Username             | Follower                  | Num Followers
----------------------+---------------------------+----------------
+==================================
+
+FOLLOWER ANALYSIS - target_account
+
+Date: 2024-11-08 15:30:00
+
+==================================
+
+Username | Follower | Num Followers
+
+-----------+-----------+----------------
+
 target_account       | follower1                 |          1,234
+
 target_account       | follower2                 |          5,678
 
 3. Execution Log (logs/followers_stats_log_TIMESTAMP.txt)
@@ -127,18 +141,25 @@ step3_credentials_entered_*.png – After entering credentials
 step4_after_login_click_*.png – After login
 
 ⚙️ Advanced Configuration
+
 Environment Variables
 
 You can use environment variables instead of the .env file:
 
 # Windows
+
 set IG_USERNAME=your_username
+
 set IG_PASSWORD=your_password
+
 python instagram_follower_stats.py
 
 # Linux/Mac
+
 export IG_USERNAME=your_username
+
 export IG_PASSWORD=your_password
+
 python instagram_follower_stats.py
 
 Modify Delays
@@ -164,6 +185,7 @@ Progressive scrolling
 Still, Instagram may detect and block your account.
 
 ❗ Common Issues
+
 "Login error"
 
 Check your credentials in .env
