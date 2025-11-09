@@ -1,0 +1,7 @@
+# ==================== requirements.txt ====================
+# Archivo: requirements.txt
+# Descripción: Dependencias del proyecto
+
+selenium==4.15.2
+webdriver-manager==4.0.1
+python-dotenv==1.0.0
